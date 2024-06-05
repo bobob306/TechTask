@@ -74,7 +74,7 @@ private fun HomeScreenContent(
                     is ViewData.Data -> {
                         viewData.content.averagePrice?.let {
                             TechText(
-                                text = "$it",
+                                text = "£$it",
                                 modifier = Modifier.padding(bottom = SizeTokens.Medium)
                             )
                         }
