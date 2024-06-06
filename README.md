@@ -1,4 +1,5 @@
 Welcome
+
 This is written in Kotlin and Compose for UI and Hilt for DI
 There are unit tests for the repository, viewDataMapper and viewModel
 
@@ -9,6 +10,8 @@ a network request happens, if error then error shows ,
 else dto is mapped to viewData ,
 finally ViewData state changes to Data and is loaded with the viewData,
 the average price is displayed
+
+You will notice the screen is split into two columns to ensure the question is exactly in the middle of the screen, this is naff, should have done offsets, I just didn't get around to changing it at the end
 
 Some components are designed to be inflexible so that they will always meet the design spec, e.g. TechText and TechButton
 This way any usage will have the correct text size and colour
