@@ -46,3 +46,5 @@ Hopefully that would be signalled far enough in advance that we can add types to
 There are some extra screens such as error screen and dummy screen which are not used as no navigation is needed, however maybe we can do that during an interview?
 
 There are many additional comments in the code to help with understanding
+
+Ben
