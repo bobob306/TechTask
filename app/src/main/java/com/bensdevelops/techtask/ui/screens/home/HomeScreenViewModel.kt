@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.bensdevelops.techtask.core.ViewData
 import com.bensdevelops.techtask.mapper.PropertyViewDataMapper
-import com.bensdevelops.techtask.network.repository.RepositoryImpl
+import com.bensdevelops.techtask.network.repository.Repository
 import com.bensdevelops.techtask.ui.screens.home.viewdata.PropertyListViewData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeScreenViewModel @Inject constructor(
-    private val repository: RepositoryImpl,
+    private val repository: Repository,
     private val viewDataMapper: PropertyViewDataMapper,
 ) : ViewModel() {
 

@@ -2,6 +2,8 @@ package com.bensdevelops.techtask.network.service
 
 import com.bensdevelops.techtask.network.ResultCallAdapterFactory
 import com.bensdevelops.techtask.network.repository.Api
+import com.bensdevelops.techtask.network.repository.Repository
+import com.bensdevelops.techtask.network.repository.RepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -39,6 +41,11 @@ object ApiModule {
             .client(okHttpClient)
             .build()
             .create(Api::class.java)
+    }
+
+    @Provides
+    fun providesRepository(api: Api): Repository {
+        return RepositoryImpl(api)
     }
 
 }
